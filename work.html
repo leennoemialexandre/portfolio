@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Leen-Noemi Alexandre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">leen<span>.</span>noemi</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-social">
+      <a href="mailto:leenalexia@outlook.com">Email</a>
+      <a href="https://linkedin.com/in/leennoemialexandre" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/leennoemialexandre" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <h1>Work</h1>
+  <p>Product strategy, independent research, and things I've built solo. Click a row for the detail and the sourcing behind the numbers.</p>
+</div>
+
+<div class="filter-row wrap">
+  <button class="filter-tab active" data-filter="all">All</button>
+  <button class="filter-tab" data-filter="product">Product Strategy</button>
+  <button class="filter-tab" data-filter="research">Data &amp; Research</button>
+  <button class="filter-tab" data-filter="build">Independent Builds</button>
+</div>
+
+<ul class="work-list wrap">
+
+  <li class="work-item" data-category="product" id="tafia">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">tafia</span></span>
+        <span class="tag">Product Strategy</span>
+      </span>
+      <span class="date">Sep 2025 — Present <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A working prototype for an AI virtual care companion, built to test how the system should behave at the edge of real risk — including when it needs to escalate a conversation to a human. Built on Lovable (React, TypeScript, Vite, Supabase, shadcn/ui). Not publicly launched — treated throughout as a capstone-grade prototype, not a shipped product.</p>
+      <div class="stat-row">
+        <span class="chip" data-verify="50+ semi-structured interviews with family caregivers conducted during product discovery.">50+ caregiver interviews</span>
+        <span class="chip" data-verify="Meta ad campaign test: ~1,000+ impressions, ~11% conversion on the tested landing action.">Meta ads test — ~11% conversion</span>
+        <span class="chip" data-verify="Escalation logic designed specifically for interactions flagged as high-risk, determining when the system routes to a human rather than continuing autonomously.">Escalation logic for high-risk interactions</span>
+      </div>
+    </div>
+  </li>
+
+  <li class="work-item" data-category="build" id="jobaholic">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">jobaholic</span></span>
+        <span class="tag">Independent Build</span>
+      </span>
+      <span class="date">Solo project <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A full-stack job application tracker, built to manage my own search and then opened to other users. Next.js, React, Supabase, PostgreSQL, deployed on Vercel. AI-assisted development (Claude Code) was used throughout — disclosed here as a working method, not a caveat.</p>
+      <div class="stat-row">
+        <span class="chip" data-verify="Approximately 20 users actively using the tracker beyond personal use, as of last count.">~20 active users</span>
+        <span class="chip" data-verify="Full CRUD architecture covering applications, statuses, and follow-up scheduling.">Full CRUD architecture</span>
+      </div>
+      <a class="go" href="https://leennoemialexandre.github.io/jobaholic" target="_blank" rel="noopener">View the live app &rarr;</a>
+    </div>
+  </li>
+
+  <li class="work-item" data-category="research" id="hospital-margin">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">hospital-operating-margin</span></span>
+        <span class="tag">Data &amp; Research</span>
+      </span>
+      <span class="date">Independent <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A regression study asking what actually predicts hospital operating margin, using OLS and Ridge regression against a real public dataset — including an honest accounting of what the model does and doesn't explain.</p>
+      <div class="stat-row">
+        <span class="chip" data-verify="3,000+ Medicare hospital cost-report records, prepared with PostgreSQL and modeled in Python (scikit-learn).">3,000+ hospital records</span>
+        <span class="chip" data-verify="Findings reported as the 'strongest negative association' with margin — deliberately not framed as a causal predictor, since model R² remained modest.">Strongest negative association, not a predictor</span>
+      </div>
+      <a class="go" href="assets/Healthcare_Operating_Margin_Analysis.pdf" target="_blank" rel="noopener">Read the full writeup (PDF) &rarr;</a>
+    </div>
+  </li>
+
+  <li class="work-item" data-category="product" id="pinterest-strategy">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">pinterest-strategy</span></span>
+        <span class="tag">Product Strategy</span>
+      </span>
+      <span class="date">Written analysis <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A bottom-up revenue model for a hypothetical Pinterest monetization strategy, built from named assumptions rather than a top-down market-size guess.</p>
+      <div class="stat-row">
+        <span class="chip" data-verify="Bottom-up model: 537M monthly active users × 1.5% assumed conversion × $50 assumed average order value × 3% assumed commission = ~$18.15M estimated revenue.">~$18.15M estimate, built bottom-up</span>
+        <span class="chip" data-verify="Assumptions stated explicitly: 1.5% conversion, $50 AOV, 3% commission rate — written analysis, not a full financial model.">Assumptions stated explicitly</span>
+      </div>
+    </div>
+  </li>
+
+  <li class="work-item" data-category="build" id="loopify">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">loopify</span></span>
+        <span class="tag">Independent Build</span>
+      </span>
+      <span class="date">Solo project <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A small, live utility: a YouTube audio loop player, built and shipped independently end to end.</p>
+      <a class="go" href="https://leennoemialexandre.github.io/loopify" target="_blank" rel="noopener">Try it live &rarr;</a>
+    </div>
+  </li>
+
+  <li class="work-item" data-category="research" id="guardai-memo">
+    <button class="work-row">
+      <span class="left">
+        <span class="path">./<span class="dim">guardai-liability-memo</span></span>
+        <span class="tag">Writing</span>
+      </span>
+      <span class="date">Apr 2025 <span class="chev">›</span></span>
+    </button>
+    <div class="work-detail">
+      <p>A legal memorandum analyzing an AI security system's liability for a wrongful police escalation — argued from both the plaintiff's and defendant's strongest positions. Written for a Stern legal/business elective; facts are hypothetical.</p>
+      <a class="go" href="assets/GuardAI_LegalMemo.pdf" target="_blank" rel="noopener">Read the memo (PDF) &rarr;</a>
+    </div>
+  </li>
+
+</ul>
+
+<footer class="wrap">
+  <p class="footer-line">I'm always happy to talk product, strategy, or a problem you're stuck on. You can <a href="mailto:leenalexia@outlook.com">email me</a>, find me on <a href="https://linkedin.com/in/leennoemialexandre" target="_blank" rel="noopener">LinkedIn</a>, or see the code on <a href="https://github.com/leennoemialexandre" target="_blank" rel="noopener">GitHub</a>.</p>
+  <p class="footer-copy">© 2026 LEEN-NOEMI ALEXANDRE.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
